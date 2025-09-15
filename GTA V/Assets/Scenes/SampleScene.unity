@@ -123,6 +123,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &34551310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 34551311}
+  m_Layer: 0
+  m_Name: CameraNormalizaTrevor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &34551311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34551310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.75, y: 1.5, z: -1.488}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450651736242740}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &104067147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 104067148}
+  m_Layer: 0
+  m_Name: 'CameraApuntadoFlanklin '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &104067148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104067147}
+  m_LocalRotation: {x: 0.02938176, y: -0, z: -0, w: 0.9995683}
+  m_LocalPosition: {x: 0.51, y: 1.63, z: -0.97}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653019034566}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 3.367, y: 0, z: 0}
 --- !u!1 &224429601
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +335,7 @@ GameObject:
   - component: {fileID: 238817699}
   - component: {fileID: 238817700}
   - component: {fileID: 238817701}
+  - component: {fileID: 238817702}
   m_Layer: 0
   m_Name: Director
   m_TagString: Untagged
@@ -362,6 +425,51 @@ MonoBehaviour:
   Arma1: 0
   Arma2: 0
   Arma3: 0
+--- !u!114 &238817702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238817696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52698782d3c58e4487dca1437948d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ApuntadoSprite: {fileID: 1093001147}
+  ActivarApuntado: 0
+--- !u!1 &244995161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 244995162}
+  m_Layer: 0
+  m_Name: CameraNormalizadaFlanklin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &244995162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244995161}
+  m_LocalRotation: {x: 0.02938176, y: -0, z: -0, w: 0.9995683}
+  m_LocalPosition: {x: 0.757, y: 1.522, z: -1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653019034566}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 3.367, y: 0, z: 0}
 --- !u!54 &363356627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -434,6 +542,7 @@ MonoBehaviour:
   - {fileID: 363356630}
   - {fileID: 363356629}
   - {fileID: 5866666020047724623}
+  - {fileID: 5866666020047724624}
 --- !u!1 &404153725
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,6 +642,37 @@ Transform:
   m_Father: {fileID: 543450651736242740}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &561814470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 561814471}
+  m_Layer: 0
+  m_Name: CameraApuntadoMichael
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &561814471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561814470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.58, y: 1.57, z: -1.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450652081546439}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &681194543
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -605,6 +745,7 @@ MonoBehaviour:
   - {fileID: 681194546}
   - {fileID: 681194549}
   - {fileID: 5866666021231430077}
+  - {fileID: 5866666021231430078}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1330,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080360360}
   m_CullTransparentMesh: 1
+--- !u!1 &1093001147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093001148}
+  m_Layer: 5
+  m_Name: Apuntado
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1093001148
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093001147}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1830179278}
+  m_Father: {fileID: 1710186174}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1146385800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,6 +1501,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146385800}
   m_CullTransparentMesh: 1
+--- !u!1 &1187221171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1187221172}
+  m_Layer: 0
+  m_Name: 'CameraNormalizadaMichael '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1187221172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187221171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.694, y: 1.515, z: -1.376}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450652081546439}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1297527883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,7 +1586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1389570518
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1787,6 +1996,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1389570518}
+  - {fileID: 1093001148}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1795,6 +2005,113 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1830179277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1830179278}
+  - component: {fileID: 1830179280}
+  - component: {fileID: 1830179279}
+  m_Layer: 5
+  m_Name: Puntero
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1830179278
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830179277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3417066, y: 0.3417066, z: 0.3417066}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1093001148}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1830179279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830179277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 877b0f5072de2b048b08acb37ad81153, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1830179280
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830179277}
+  m_CullTransparentMesh: 1
+--- !u!1 &1948684435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948684436}
+  m_Layer: 0
+  m_Name: CameraApuntadoTrevor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1948684436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948684435}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.75, y: 1.5, z: -1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450651736242740}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1998016621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,6 +2616,8 @@ Transform:
   - {fileID: 9175173066062074828}
   - {fileID: 6619036673039091734}
   - {fileID: 486019180}
+  - {fileID: 1948684436}
+  - {fileID: 34551311}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2326,6 +2645,8 @@ Transform:
   - {fileID: 6619036672777541349}
   - {fileID: 6783009260314331983}
   - {fileID: 1631070354}
+  - {fileID: 561814471}
+  - {fileID: 1187221172}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2344,6 +2665,8 @@ Transform:
   - {fileID: 1242110077918211122}
   - {fileID: 5465940247200740178}
   - {fileID: 1686255352}
+  - {fileID: 104067148}
+  - {fileID: 244995162}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2610,6 +2933,7 @@ GameObject:
   - component: {fileID: 2102086220}
   - component: {fileID: 2102086221}
   - component: {fileID: 5866666020289887934}
+  - component: {fileID: 5866666020289887935}
   - component: {fileID: 2102086222}
   m_Layer: 0
   m_Name: michael
@@ -2633,6 +2957,7 @@ GameObject:
   - component: {fileID: 363356629}
   - component: {fileID: 363356630}
   - component: {fileID: 5866666020047724623}
+  - component: {fileID: 5866666020047724624}
   - component: {fileID: 363356631}
   m_Layer: 0
   m_Name: trevor
@@ -2656,6 +2981,7 @@ GameObject:
   - component: {fileID: 681194546}
   - component: {fileID: 681194549}
   - component: {fileID: 5866666021231430077}
+  - component: {fileID: 5866666021231430078}
   - component: {fileID: 681194550}
   m_Layer: 0
   m_Name: franklin
@@ -7317,6 +7643,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893d1d08802e9124c9639670912cac0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5866666020047724624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147795697806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2478196ee3afbc647bec9dc84474922e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EstaApuntadoTrevor: 0
+  CameraTrevor: {fileID: 486019180}
+  CameraApuntadoTrevor: {fileID: 1948684436}
+  CameraNormalizadoTrevor: {fileID: 34551311}
+  SpeedTranslationApuntadoTrevor: 10
 --- !u!95 &5866666020289887933
 Animator:
   serializedVersion: 5
@@ -7350,6 +7693,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76976c8d280b70e42937d6cca5f11ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5866666020289887935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147560103549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2af4fa8221bf384c9807ee4f544013d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EstaApuntadoMichael: 0
+  CameraMichael: {fileID: 1631070354}
+  CameraApuntadoMichael: {fileID: 561814471}
+  CameraNormalizadoMichael: {fileID: 1187221172}
+  SpeedTranslationApuntadoMichael: 10
 --- !u!95 &5866666021231430076
 Animator:
   serializedVersion: 5
@@ -7383,6 +7743,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d9ae1a3bab0874286268341cc6ff91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5866666021231430078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148761823612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12665bc52d63c234a82129b298e1f13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EstaApuntadoFlanklin: 0
+  CameraFranklin: {fileID: 1686255352}
+  CameraApuntadoFranklin: {fileID: 104067148}
+  CameraNormalizadoFranklin: {fileID: 244995162}
+  SpeedTranslationApuntadoFranklin: 10
 --- !u!4 &5901452233643619908
 Transform:
   m_ObjectHideFlags: 0

@@ -6,6 +6,10 @@ public class AnimatorControllerFlanklin : MonoBehaviour
 {
     private Animator animatorFlanklin;
 
+    [Header("Capa")]
+    [Range(0f, 100f)]public int CapaAnimatorJason;
+    public float[] PesosDeCapasDeJason;
+
 
     // Start is called before the first frame update
     void Start()

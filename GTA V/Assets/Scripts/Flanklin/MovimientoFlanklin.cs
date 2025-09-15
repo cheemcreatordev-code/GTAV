@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class MovimientoFlanklin : MonoBehaviour
 {
+    public static MovimientoFlanklin InstaceMovimientoFranklin; 
+
     private Rigidbody rigidbody;
 
     [Header("Speeds Movement")]
     [Range(0, 100f)]public float SpeedDefaultFlanklin;
 
+    void Awake()
+    {
+        InstaceMovimientoFranklin = this;
+    }
 
     void Start()
     {

@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class MovimientoMichael : MonoBehaviour
 {
+    public static MovimientoMichael InstanceMovimientoMichael;
+
     private Rigidbody rigidbody;
 
     [Header("Speeds Movement")]
     [Range(0, 100f)]public float SpeedDefaultMichael;
 
+    void Awake()
+    {
+        InstanceMovimientoMichael = this;    
+    }
 
     void Start()
     {

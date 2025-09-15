@@ -2261,6 +2261,8 @@ MonoBehaviour:
   - {fileID: 2102086220}
   - {fileID: 2102086221}
   - {fileID: 5866666020289887934}
+  - {fileID: 5866666020289887937}
+  - {fileID: 5866666020289887935}
 --- !u!1 &9171099875277524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,6 +2937,7 @@ GameObject:
   - component: {fileID: 2102086221}
   - component: {fileID: 5866666020289887934}
   - component: {fileID: 5866666020289887935}
+  - component: {fileID: 5866666020289887937}
   - component: {fileID: 2102086222}
   m_Layer: 0
   m_Name: michael
@@ -7695,6 +7698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76976c8d280b70e42937d6cca5f11ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PesosDeCapasDeMichael: []
 --- !u!114 &5866666020289887935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7712,6 +7716,20 @@ MonoBehaviour:
   CameraApuntadoMichael: {fileID: 561814471}
   CameraNormalizadoMichael: {fileID: 1187221172}
   SpeedTranslationApuntadoMichael: 10
+--- !u!114 &5866666020289887937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147560103549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce72084d2fa187e469d274ac03dfed4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedRunMichael: 7
+  SpeedNormalizedMichael: 0
 --- !u!95 &5866666021231430076
 Animator:
   serializedVersion: 5

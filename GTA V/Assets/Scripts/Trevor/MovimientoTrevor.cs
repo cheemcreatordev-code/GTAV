@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class MovimientoTrevor : MonoBehaviour
 {
+    public static MovimientoTrevor InstanceMovimientoTrevor;
+
     private Rigidbody rigidbody;
 
     [Header("Speeds Movement")]
     [Range(0, 100f)]public float SpeedDefaultTrevor;
 
+    void Awake()
+    {
+        InstanceMovimientoTrevor = this;    
+    }
 
     void Start()
     {

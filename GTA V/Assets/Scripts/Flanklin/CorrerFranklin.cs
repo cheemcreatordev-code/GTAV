@@ -23,8 +23,11 @@ public class CorrerFranklin : MonoBehaviour
     {
         if (InputController.Instance.AccionCorrer)
         {
-            AnimatorControllerFlanklin.InstaceAnimatorFlanklin.PesosDeCapasDeFranklin[1] = 1;
-            MovimientoFlanklin.InstaceMovimientoFranklin.SpeedDefaultFlanklin = SpeedRunFranklin;
+            if (InputController.Instance.InputHorizontal != 0 || InputController.Instance.InputVertical != 0)
+            {
+                MovimientoFlanklin.InstaceMovimientoFranklin.SpeedDefaultFlanklin = SpeedRunFranklin;
+                AnimatorControllerFlanklin.InstaceAnimatorFlanklin.PesosDeCapasDeFranklin[1] = 1;
+            }
         }
         else
         {

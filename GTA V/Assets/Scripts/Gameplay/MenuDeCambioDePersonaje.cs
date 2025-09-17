@@ -23,6 +23,8 @@ public class MenuDeCambioDePersonaje : MonoBehaviour
     public ContenedorFranklin contenedorfranklin;
     public ContenedorDeScriptTrevor contenedordescripttrevor;
 
+    public bool EstaEligiendoPersonaje;
+
     void Awake()
     {
         InstanceMenuDePersonajes = this;
@@ -48,16 +50,14 @@ public class MenuDeCambioDePersonaje : MonoBehaviour
         if (InputController.Instance.AccionCambioDePersonaje)
         {
             MenuDeSelecionDePersonaje.SetActive(true);
-            QuitarCursor.InstanceCursor.Visibilidad = true;
-            QuitarCursor.InstanceCursor.EstadoCursor = CursorLockMode.None;
             ActivacionDelMenuDeSelecionDePersonaje = true;
+            EstaEligiendoPersonaje = true;
         }
         else
         {
             MenuDeSelecionDePersonaje.SetActive(false);
-            QuitarCursor.InstanceCursor.Visibilidad = false;
-            QuitarCursor.InstanceCursor.EstadoCursor = CursorLockMode.Locked;
             ActivacionDelMenuDeSelecionDePersonaje = false;
+            EstaEligiendoPersonaje = false;
         }
     }
 

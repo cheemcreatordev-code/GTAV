@@ -23,8 +23,11 @@ public class CorrerMichel : MonoBehaviour
     {
         if (InputController.Instance.AccionCorrer)
         {
-            AnimatorControllerMichael.InstaceAnimatorMichael.PesosDeCapasDeMichael[1] = 1;
-            MovimientoMichael.InstanceMovimientoMichael.SpeedDefaultMichael = SpeedRunMichael;
+            if (InputController.Instance.InputHorizontal != 0 || InputController.Instance.InputVertical != 0)
+            {
+                AnimatorControllerMichael.InstaceAnimatorMichael.PesosDeCapasDeMichael[1] = 1;
+                MovimientoMichael.InstanceMovimientoMichael.SpeedDefaultMichael = SpeedRunMichael;
+            }
         }
         else
         {

@@ -33,11 +33,14 @@ public class ApuntadoTrevor : MonoBehaviour
         {
             EstaApuntadoTrevor = true;
             CameraTrevor.transform.position = Vector3.Lerp(CameraTrevor.transform.position, CameraApuntadoTrevor.transform.position, SpeedTranslationApuntadoTrevor * Time.deltaTime);
+            AnimatorControllerTrevor.InstanceAnimatorControllerTrevor.PesosDeCapasDeTrevor[2] = 1;
+
         }
         else
         {
             EstaApuntadoTrevor = false;
             CameraTrevor.transform.position = Vector3.Lerp(CameraTrevor.transform.position, CameraNormalizadoTrevor.transform.position, SpeedTranslationApuntadoTrevor * Time.deltaTime);
+            AnimatorControllerTrevor.InstanceAnimatorControllerTrevor.PesosDeCapasDeTrevor[2] = 0;
         }
     }
 }

@@ -12,19 +12,38 @@ public class QuitarCursor : MonoBehaviour
 
     void Awake()
     {
-        InstanceCursor = this;    
+        InstanceCursor = this;
     }
 
     // Update is called once per frame
     void Update()
     {
         Funcion_Quitar_Cursor();
+        Actualizar_Cursor();
+
     }
 
     public void Funcion_Quitar_Cursor()
     {
         Cursor.visible = Visibilidad;
         Cursor.lockState = EstadoCursor;
+    }
+
+    public void Actualizar_Cursor()
+    {
+        bool eligiendoArma = EligirArmaTrevor.InstanceArmaTrevor.EstaEligiendoArmaTrevor;
+        bool eligiendoPersonaje = MenuDeCambioDePersonaje.InstanceMenuDePersonajes.EstaEligiendoPersonaje;
+
+        if (eligiendoArma || eligiendoPersonaje)
+        {
+            Visibilidad = true;
+            EstadoCursor = CursorLockMode.None;
+        }
+        else
+        {
+            Visibilidad = false;
+            EstadoCursor = CursorLockMode.Locked;
+        }
     }
 
 }

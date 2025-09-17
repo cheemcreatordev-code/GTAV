@@ -14,7 +14,7 @@ public class VelocidadDelEcenario : MonoBehaviour
 
     public void Speed_Ecenario()
     {
-        if (MenuDeCambioDePersonaje.InstanceMenuDePersonajes.ActivacionDelMenuDeSelecionDePersonaje)
+        if (MenuDeCambioDePersonaje.InstanceMenuDePersonajes.ActivacionDelMenuDeSelecionDePersonaje || InputController.Instance.AccionCambiarArmas)
         {
             Time.timeScale = SpeedSelecionDelPersonaje;
         }
